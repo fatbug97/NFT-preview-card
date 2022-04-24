@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --soft-blue: hsl(215, 51%, 70%);
+      --cyan: hsl(178, 100%, 50%);
+      --view-bg: hsla(178, 100%, 50%, 0.5);
+      --very-dark-blue-gb: hsl(217, 54%, 11%);
+      --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+      --very-dark-blue-line: hsl(215, 32%, 27%);
+      --white: hsl(0, 0%, 100%);
+      --nft-preview-dimension: 300px;
+      font-size: 18px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--very-dark-blue-gb);
+      color: var(--white);
+    }
+
+    p {
+      color: var(--soft-blue);
+    }
+
+    .card {
+      background-color: var(--very-dark-blue-card-bg);
+      padding: 1.3rem;
+      border-radius: 1rem;
+      width: 345px;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .nft-image img {
+      border-radius: 0.5rem;
+      position: relative;
+      width: var(--nft-preview-dimension);
+      height: var(--nft-preview-dimension);
+    }
+
+    .nft-image:hover::before {
+      /* https://stackoverflow.com/a/19255455 */
+      content: url(./images/icon-view.svg);
+      width: var(--nft-preview-dimension);
+      height: var(--nft-preview-dimension);
+      position: absolute;
+      background-color: var(--view-bg);
+      border-radius: 0.5rem;
+      z-index: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flex-row {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .auth {
+      position: relative;
+      font-size: 0.9rem;
+    }
+
+    .auth::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--very-dark-blue-line);
+      display: block;
+    }
+
+    .auth-avatar {
+      border-style: solid;
+      border-width: 1px;
+      border-color: var(--white);
+      border-radius: 4rem;
+      width: 32px;
+      height: 32px;
+    }
+    .auth-avatar img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .auth-name {
+      color: var(--white);
+    }
+
+    a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--cyan);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="card">
+      <div class="nft-image">
+        <img alt="nft-preview" src="./images/image-equilibrium.jpg" />
+      </div>
+      <h3><a href="#">Equilibrium #3429</a></h3>
+
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="flex-row justify-between">
+        <div class="flex-row">
+          <img alt="eth" src="./images/icon-ethereum.svg" />
+          <p>0.041 ETH</p>
+        </div>
+        <div class="flex-row">
+          <img alt="time" src="./images/icon-clock.svg" />
+          <p>3 days left</p>
+        </div>
+      </div>
+      <div class="auth flex-row">
+        <div class="auth-avatar">
+          <img alt="auth-avatar" src="./images//image-avatar.png" />
+        </div>
+        <p>Creation of <a class="auth-name" href="#">Jules Wyvern</a></p>
+      </div>
+    </div>
+
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="github.com/thinhlevn">thinhlevn</a>.
+  </footer>
+</body>
+
+</html>
