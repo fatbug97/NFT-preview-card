@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [fatbug97](https://github.com/fatbug97/NFT-preview-card)
-- Live Site URL: [NFT preview card](https://thinhlevn.github.io/NFT-preview-card/)
+- Live Site URL: [NFT preview card](https://fatbug97.github.io/NFT-preview-card/)
 
 ## My process
 
