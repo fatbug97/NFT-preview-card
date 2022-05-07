@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [thinhlevn](https://github.com/thinhlevn/NFT-preview-card)
+- Solution URL: [fatbug97](https://github.com/fatbug97/NFT-preview-card)
 - Live Site URL: [NFT preview card](https://thinhlevn.github.io/NFT-preview-card/)
 
 ## My process
@@ -45,6 +45,6 @@ https://stackoverflow.com/questions/19255296/is-there-a-way-to-use-svg-as-conten
 
 ## Author
 
-- Website - [thinh.xyz](https://thinh.xyz)
-- Frontend Mentor - [@thinhlevn](https://www.frontendmentor.io/profile/thinhlevn)
+- Website - [fatbug97.me](https://fatbug97.me)
+- Frontend Mentor - [@fatbug97](https://www.frontendmentor.io/profile/fatbug97)
 - Twitter - [@fatbug97](https://www.twitter.com/fatbug97)
